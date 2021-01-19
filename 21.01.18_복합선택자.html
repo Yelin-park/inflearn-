@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style type="text/css">
+      /*하위 선택자 : 하위 선택자가 먼저 설정 됨*/
+      #item-list p {
+        color: red;
+      }
+      /* 자식 선택자 : 하위 선택자 다음으로 body 안 div에 제일 첫 번째에 있는 자식 아이템에 설정이 적용됨 */
+      #item-list > p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="item-list">
+      <p>첫번 째 자식 아이템1</p>
+      <p>첫번 째 자식 아이템2</p>
+      <div>
+        <p>두번재 자식 아이템1</p>
+        <p>두번재 자식 아이템2</p>
+      </div>
+    </div>
+  </body>
+</html>
